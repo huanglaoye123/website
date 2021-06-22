@@ -10,14 +10,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import { NEWS_ABSTRACT } from '../config';
-// import Fullscreenvideo from '../components/Fullscreenvideo.js';
-// import VideoBg from "reactjs-videobg";
 import VideoBg from '../components/VideoBg/VideoBg';
 import poster from "../assets/imgs/Index/video_cover.jpeg";
-// import mp4 from "../assets/mp4/2k.mp4";
 import Header from '../components/Header';
-// import { Helmet } from 'react-helmet';
-
 import { injectIntl, FormattedMessage } from 'gatsby-plugin-intl';
 import { LANGS} from '../config';
 
