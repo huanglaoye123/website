@@ -22,17 +22,20 @@ export default class NewsDetail extends React.Component {
             </div>
             <hr className={styles.hr}/>
             <h3 className={styles.sub_title}>{title}</h3><span>时间：{time} &nbsp;&nbsp;&nbsp;&nbsp; 发布者：{publisher}</span>
-            {items && items.map(({txt,src,title},i) =>{
-					if(title){
-						return <div><p style={{fontWeight:"800"}} key={i}>{title}</p><br/></div>
-					}
-					else{
-						return txt ? <div><p key={i}>{txt}</p><br/></div> : <img key={src+i} src={src}/>
-					}
-				}
+            {items && items.map(({txt,src,title,video},i) =>{
+									if(video){
+										return <video style={{ display:'block', margin:'auto'}} controls={{}} autoPlay={{}}><source src={video}/></video>
+									}
+								 else if(title){
+										return <div><p style={{fontWeight:"800"}} key={i}>{title}</p><br/></div>
+									}
+									else{
+										return txt ? <div><p key={i}>{txt}</p><br/></div> : <img key={src+i} src={src}/>
+									}
+								}
               )}
-            {items && items.map(({video},i)  => video ? <video style={{ display:'block', margin:'auto'}} controls={{}} autoPlay={{}}><source src={video}/></video> : null
-            )}
+            {/*items && items.map(({video},i)  => video ? <video style={{ display:'block', margin:'auto'}} controls={{}} autoPlay={{}}><source src={video}/></video> : null
+            )*/}
 			{items && items.map(({iframe},i)  => iframe ? <div style={{margin:'0 auto',width:'80%',height:'477px'}}><iframe width="100%" height="100%" frameborder="0" src={iframe} allowFullScreen="true"></iframe></div>  : null
 			)}
             {/* <div style={{display:items[items.length-1].video?'block':'none'}}>
