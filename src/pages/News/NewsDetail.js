@@ -30,7 +30,7 @@ export default class NewsDetail extends React.Component {
 										return <div><p style={{fontWeight:"800"}} key={i}>{title}</p><br/></div>
 									}
 									else{
-										return txt ? <div><p key={i}>{txt}</p><br/></div> : <img key={src+i} src={src}/>
+										return txt ? <div><p key={i}>{txt}</p><br/></div> : <img referrerpolicy="no-referrer" key={src+i} src={src}/>
 									}
 								}
               )}

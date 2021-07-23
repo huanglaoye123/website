@@ -314,7 +314,7 @@ export const NEWS_ABSTRACT = [
 	{title:'化繁为简|CPX-600高级心肺功能评测系统助力陕西心脏康复”',time:'2021-07-12',cnt:'2021年6月24日至26日，陕西省心脏康复中心联盟成立大会暨心脏康复高峰论坛在古城西安举行。此次会议，madecare携能将CPET测试“化繁为简”...',src:require('./assets/imgs/News/new8-01.jpg'),to:'/news/newsdetail#news8'},
 	{title:'会议回顾 | 心肺运动试验临床应用与研究学术研讨会”',time:'2021-06-26',cnt:'心肺运动试验临床应用与研究学术研讨会已于2021年6月25日圆满落幕请跟随美德远健回顾此次会议...',src:require('./assets/imgs/News/new7-09.jpg'),to:'/news/newsdetail#news7'},
   {title:'有效逆转高血压的“新处方”',time:'2020-08-28',cnt:'2019年中国心血管健康与疾病报告最新统计，大于18岁的成年人高血压患病率27.9%。我国成年人中每4个人就有1个高血压患者，是影响我国居民心血管健康的头号健康大敌...',src:require('./assets/bigimg/new6-1.gif'),to:'/news/newsdetail#news6'},
-  {title:'了解心肺功能——CPET“肺”他莫属',time:'2020-10-29',cnt:'随着社会的高度发展，当前威胁我们健康的主要原因已由传染类疾病过渡到以心血管病、“ 三高”为代表的慢性病。而引起这些慢性病的主要原因之...',src:'https://ftp.bmp.ovh/imgs/2020/11/dcb1202779b07b87.gif',to:'/news/newsdetail#news0'},
+  {title:'了解心肺功能——CPET“肺”他莫属',time:'2020-10-29',cnt:'随着社会的高度发展，当前威胁我们健康的主要原因已由传染类疾病过渡到以心血管病、“ 三高”为代表的慢性病。而引起这些慢性病的主要原因之...',src:'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-imgbed/61b0e7d7-85ed-4e8f-980b-a2cf87502b7b.gif',to:'/news/newsdetail#news0'},
   {title:'化繁为简|国际康复设备展览会',time:'2019-11-8',cnt:'为加强康复医学学术交流与合作，发挥高端学术会议引领辐射作用，打造综合学术年会品牌，2019年11月22至24日，中国康复医学会将...',src:require('./assets/imgs/News/118.png'),to:'/news/newsdetail#news1'},
   {title:'展会回顾|“无感”监护 第八届中国国际养老服务业博览会',time:'2019-8-28',cnt:'第八届中国国际养老服务业博览会吸引了来自20多个国家和地区的220多家社会组织、机构及企业参展；本届博览会创新办会模式，由以往...',src:require('./assets/imgs/News/828.png'),to:'/news/newsdetail#news2'},
   {title:'美德远健携多款高端康复医疗设备成功签约入驻石家庄高新区',cnt:'石家庄（北京）生物医药健康产业专题对接会签约仪式于2018年5月16日在北京圆满完成，美德远健作为重点邀请入区企业成功签约入区...',time:'2018-05-18',src:require('./assets/bigimg/news1.jpg'),to:'/news/newsdetail#news3'},
