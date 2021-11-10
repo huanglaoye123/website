@@ -54,7 +54,11 @@ export default @injectIntl class Index extends React.Component {
       obj[i].style.opacity = 1; 
     }
   }
-
+	
+	componentDidMount() {
+		document.title = "美德远健官网";
+	}
+	
   render({...rest }) {
     // console.log(rest);
     // console.log("&&^*")
@@ -303,7 +307,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
+                          <img alt="美德远健" style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
                       </div>
                       <div className={styles.backto} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
