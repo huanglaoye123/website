@@ -96,7 +96,8 @@ export default @injectIntl class Contact extends React.Component {
                             <img style={{width:(intl.locale !== "en") ? '50%':'61%',marginTop: (intl.locale !== "en") ? '0%':'22%'}} src={require('../assets/imgs/Contact/qrcode.png')} alt=""/>
                             <p className={styles.word_14} style={{marginLeft: '14%', lineHeight: '250%',display:(intl.locale !== "en") ? 'block':'none'}}><FormattedMessage id="contact.wechat" /></p>
                             <div className={styles.contact_text} style={{display:(intl.locale !== "en") ? 'block':'none'}}>                              
-                              <p className={styles.word_14}><FormattedMessage id="contact.tel" /><br/><FormattedMessage id="contact.email" /><br/><FormattedMessage id="contact.website" /></p>
+                              <p className={styles.word_14}><FormattedMessage id="contact.tel" /><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+															<FormattedMessage id="contact.fixedl" /><br/><FormattedMessage id="contact.email" /><br/><FormattedMessage id="contact.website" /></p>
                             </div>
                             <div className={styles.contact_text2} style={{display:(intl.locale !== "en") ? 'none':'block'}}>                              
                               <p style={{textAlign:'center'}}>wechat</p>
