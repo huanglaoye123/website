@@ -27,7 +27,6 @@ export default @injectIntl class Index extends React.Component {
 
 
   onLeave(origin, destination, direction) {
-    // console.log("Leaving section " + origin.index);
     if (origin.index=="1") {
       var s = document.getElementsByTagName("video")[0];
       s.play();
