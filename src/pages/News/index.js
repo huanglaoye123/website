@@ -5,6 +5,16 @@ import Link from '../../components/Link';
 import { NEWS_ABSTRACT } from '../../config';
 
 export default class News extends React.Component {
+	
+	componentDidMount() {
+		document.title = "美德远健官网";
+		const meta = document.createElement('meta');
+		meta.content = 'never';
+		meta.name = 'referrer';
+		console.log(document.getElementsByTagName('head'))
+		document.getElementsByTagName('head')[0].appendChild(meta);
+	}
+	
   render() {
     return (
       <div style={{overflow: 'auto',paddingTop: '65px'}}>

@@ -56,6 +56,11 @@ export default @injectIntl class Index extends React.Component {
 	
 	componentDidMount() {
 		document.title = "美德远健官网";
+		const meta = document.createElement('meta');
+		meta.content = 'never';
+		meta.name = 'referrer';
+		console.log(document.getElementsByTagName('head'))
+		document.getElementsByTagName('head')[0].appendChild(meta);
 	}
 	
   render({...rest }) {
@@ -105,8 +110,7 @@ render={({ state, fullpageApi }) => {
                 </VideoBg> */}
                 {/* <iframe height={498} width={510} src={'https://vku.youku.com/live/ilpshare?id=8063211'} frameborder={0} ></iframe> */}
                 <VideoBg loop muted autoPlay>
-                    <VideoBg.Source src={'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-imgbed/0a8ddb02-4d49-44bf-b22c-2abd6f911129.mp4'} />
-                    
+                    <VideoBg.Source src={require('../assets/mp4/2k-ffa96772cabead64113b654f2b13bf01.mp4')} />
                 </VideoBg>
               </div>
               <div className="section">
@@ -261,7 +265,7 @@ render={({ state, fullpageApi }) => {
                   </div>
 
                   <div className="wrapper">
-                    <div className={styles.web_bg}  style={{backgroundImage: `url(https://vkceyugu.cdn.bspapp.com/VKCEYUGU-imgbed/50d2eab3-4046-4e72-8bca-52e5fe08b4f0.png)` }}>
+                    <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/dws1000_1.png')})` }}>
                           <div style={{}}>
                               <p className={styles.Index} style={{  marginTop: '70vh',marginLeft: '12.5rem'}} >
                                 01
@@ -480,7 +484,7 @@ render={({ state, fullpageApi }) => {
                     </button>                    
                   </div>
 
-                  <div className={styles.web_bg} style={{backgroundImage: `url(${require('../assets/bigimg/tr800webbg.png')})` ,height: '96.8%', marginTop: '3.2%'}} />
+                  <div className={styles.web_bg} style={{backgroundImage: `url(${require('../assets/bigimg/tr800webbg.jpg')})` ,height: '96.8%', marginTop: '3.2%'}} />
                     <div className={styles.tr800_right}>
                         <div className={styles.descrip3} style={{textAlign:"right"}}  >                        
                             <div className={styles.word_24} style={{ display: 'inline-block',  width: '100%'}}>
@@ -513,9 +517,9 @@ render={({ state, fullpageApi }) => {
                   </div>
 
                     <div >
-                      <div className={styles.tr800} >             
+                      <div className={styles.tr800}>             
                       </div>
-                      <div className={styles.web_bg} style={{backgroundImage: `url(https://vkceyugu.cdn.bspapp.com/VKCEYUGU-imgbed/3f94f5d5-30f3-4475-965c-1ed45b41ba0d.png)`,height: '97.6%', marginTop: '2.4%' }} />
+                      <div className={styles.web_bg} style={{backgroundImage: `url(${require('../assets/imgs/Index/tr800_02.jpg')})`, height: '97.6%', marginTop: '2.4%' }} />
                       <div className={styles.tr800_info}>
                               <div className={styles.tr800_title}><p  className={styles.word_30}> {intl.formatMessage({ id: "p8.tr800" })}</p></div>
                                   <div className={styles.product_tr800}> 
@@ -577,7 +581,7 @@ render={({ state, fullpageApi }) => {
                             </div>
                         </div>                                                                
                     </div>
-                    <div className={styles.web_bg} style={{backgroundImage: `url(${require('../assets/bigimg/product04webbg.png')})` ,height: '96.7%', marginTop: '3.3%'}} />
+                    <div className={styles.web_bg} style={{backgroundImage: `url(${require('../assets/bigimg/product04webbg.jpg')})` ,height: '96.7%', marginTop: '3.3%'}} />
                     
               </div>
               <div className="section">
@@ -632,7 +636,7 @@ render={({ state, fullpageApi }) => {
                   {/* P11 */}
                   <Header {...this.props}/>
                   <div className="wrapper">
-                    <div className={styles.web_bg}  style={{backgroundImage: `url(https://vkceyugu.cdn.bspapp.com/VKCEYUGU-imgbed/52fcd03b-3767-4557-b3d2-0ec154c2e451.png)` ,zIndex:'0'}}>
+                    <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/pms600_01.jpg')})` ,zIndex:'0'}}>
                     <div className={styles.back_top}>
                       <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                         <div className={styles.back_icon}>
@@ -725,7 +729,7 @@ render={({ state, fullpageApi }) => {
                   </div>
                   
                   <div className="wrapper">
-                    <div className={styles.web_bg}  style={{backgroundImage: `url(https://vkceyugu.cdn.bspapp.com/VKCEYUGU-imgbed/6e70f339-467e-4b76-b62b-c598e1666c2d.png)` }}>
+                    <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/sc600_01.jpg')})` }}>
                       <div style={{}}>
                           <p className={styles.Index} style={{marginTop: '15%', marginRight: '2.5rem',marginLeft: '2.5rem'}} >06</p>
                       </div>
@@ -815,7 +819,7 @@ render={({ state, fullpageApi }) => {
 
                   <div className={styles.yjy_box} style={{height: (intl.locale !== "en") ? '72vh':'85vh'}}>
                       <div className={styles.yjy} > 
-                          <img style={{width: '100%',    maxHeight: '99%',  backgroundSize: 'cover',    paddingTop: '1%'}} src={(intl.locale !== "en") ? require('../assets/bigimg/yjy.png') : require('../assets/imgs/Index/yjy_en.png')} />            
+                          <img style={{width: '100%',    maxHeight: '99%',  backgroundSize: 'cover',    paddingTop: '1%'}} src={(intl.locale !== "en") ? require('../assets/bigimg/yjy.jpg') : require('../assets/imgs/Index/yjy_en.png')} />            
                       </div>
                   </div>
 
